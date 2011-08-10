@@ -1,6 +1,6 @@
 @successes, @failures = 0, []
-def test(&block)
-  block.call || raise("Expected true, got false")
+def test
+  yield || raise("Expected true, got false")
   print "."
   @successes += 1
 rescue => err
