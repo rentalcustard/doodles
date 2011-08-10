@@ -1,5 +1,13 @@
 require_relative 'test_framework'
 
 test do
-  assert { true }
+  true
+end
+
+test do
+  false
+end
+
+test do
+  raise "O hai"
 end
