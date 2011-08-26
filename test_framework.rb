@@ -1,3 +1,4 @@
+#The stupidest test framework ever. See test.rb for usage examples.
 @successes, @failures = 0, []
 def test
   yield || raise("Expected true, got false")
